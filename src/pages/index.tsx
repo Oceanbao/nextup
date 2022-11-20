@@ -1,6 +1,6 @@
 import BigText from 'components/BigText'
-import Container from 'components/Container'
 import Card from 'components/Card'
+import Container from 'components/Container'
 
 const List = () => {
   return (

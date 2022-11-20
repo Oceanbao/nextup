@@ -1,13 +1,12 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
   content: [
-    './components/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       maxWidth: {
@@ -33,8 +32,7 @@ module.exports = {
       120: '1.2',
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

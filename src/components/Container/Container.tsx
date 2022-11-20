@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
+import Footer from 'components/Footer/Footer'
+import cn from 'lib/classNames'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
-
-import Footer from 'components/Footer/Footer'
-import cn from 'lib/classNames'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Container(props: any) {
@@ -63,7 +62,10 @@ export default function Container(props: any) {
 
         <nav className='filter-blur sticky top-2 z-[1] mx-auto flex w-full max-w-2xl items-center justify-between rounded-md bg-gray-100/40 px-4 py-2 dark:bg-gray-1000/40 md:top-4'>
           <div className='text-tertiary flex flex-row gap-1'>
-            <Link className='hover:text-primary cursor-pointer transition-all' href='/'>
+            <Link
+              className='hover:text-primary cursor-pointer transition-all'
+              href='/'
+            >
               Home
             </Link>
           </div>

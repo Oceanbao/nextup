@@ -32,7 +32,5 @@ module.exports = {
       120: '1.2',
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }

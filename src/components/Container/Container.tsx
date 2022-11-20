@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
-import Footer from 'components/Footer/Footer'
-import cn from 'lib/classNames'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
+
+import Footer from '@components/Footer/Footer'
+import cn from '@lib/classNames'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Container(props: any) {

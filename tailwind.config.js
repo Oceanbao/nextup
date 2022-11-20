@@ -3,6 +3,9 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // see src/lib/themeUtil.ts for reference
+  // darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: 'class',
   content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',

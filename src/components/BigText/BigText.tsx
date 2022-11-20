@@ -1,8 +1,9 @@
 // https://github.com/delbaoliveira/website/blob/main/ui/challenge/TextSlider.tsx
 import React from 'react'
 
-import classNames from 'lib/classNames'
 import { useInterval } from 'react-use'
+
+import classNames from '@lib/classNames'
 
 interface BigTextProps {
   slides: Array<string>

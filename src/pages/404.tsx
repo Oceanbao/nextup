@@ -14,10 +14,11 @@ export default function NotFound() {
             You found something that used to exist, or you typed something
             wrong. Try that URL again or return home.
           </p>
-          <Link href='/'>
-            <a className='mx-auto rounded-md bg-gray-100 px-8 py-4 text-lg font-bold text-gray-900 dark:bg-gray-800 dark:text-gray-100'>
-              Return home
-            </a>
+          <Link
+            href='/'
+            className='mx-auto rounded-md bg-gray-100 px-8 py-4 text-lg font-bold text-gray-900 dark:bg-gray-800 dark:text-gray-100'
+          >
+            Return home
           </Link>
         </div>
       </div>

@@ -15,26 +15,19 @@
   }
 
   :root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      #da62c4 30%,
+      white 60%
+    );
   }
 
   #__next {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-
-  .capsize::before {
-    content: '';
-    margin-bottom: -0.098em;
-    display: table;
-  }
-
-  .capsize::after {
-    content: '';
-    margin-top: -0.219em;
-    display: table;
   }
 
   pre::-webkit-scrollbar {
@@ -83,7 +76,7 @@
   }
 
   body {
-    @apply p-0 m-0 font-sans;
+    @apply m-0 p-0 font-sans;
   }
 
   body:after {
@@ -101,7 +94,7 @@
 @layer components {
   /* needed to override tailwind forms styles */
   select {
-    @apply w-full px-4 py-2 border border-gray-200 rounded outline-none text-primary bg-gray-1000 bg-opacity-5 hover:bg-opacity-10 focus:border-gray-1000 focus:outline-none focus:ring-0 dark:border-gray-800 dark:bg-white dark:focus:border-gray-600;
+    @apply text-primary w-full rounded border border-gray-200 bg-gray-1000 bg-opacity-5 px-4 py-2 outline-none hover:bg-opacity-10 focus:border-gray-1000 focus:outline-none focus:ring-0 dark:border-gray-800 dark:bg-white dark:focus:border-gray-600;
   }
 
   button:focus,
@@ -118,7 +111,7 @@
 
   input[type='text'],
   textarea {
-    @apply bg-white border border-gray-200 outline-none dark:border-gray-700 dark:bg-gray-800;
+    @apply border border-gray-200 bg-white outline-none dark:border-gray-700 dark:bg-gray-800;
   }
 
   input[type='checkbox'] {
@@ -131,7 +124,7 @@
   }
 
   .font-list-heading {
-    @apply font-sans text-lg font-bold text-primary;
+    @apply text-primary font-sans text-lg font-bold;
   }
 
   .tabbed-navigation::-webkit-scrollbar {
@@ -170,11 +163,11 @@
   }
 
   .button-primary-x {
-    @apply flex items-center justify-center flex-none px-4 py-2 space-x-2 text-sm font-semibold leading-none text-gray-700 transition-all bg-white border border-gray-400 rounded-md shadow-sm cursor-pointer dark:text-gray-300 hover:text-gray-1000 dark:bg-gray-900 border-opacity-30 dark:border-opacity-30 dark:border-gray-500 dark:hover:text-white hover:border-opacity-50 dark:hover:border-opacity-50 hover:shadow-sm;
+    @apply flex flex-none cursor-pointer items-center justify-center space-x-2 rounded-md border border-gray-400 border-opacity-30 bg-white px-4 py-2 text-sm font-semibold leading-none text-gray-700 shadow-sm transition-all hover:border-opacity-50 hover:text-gray-1000 hover:shadow-sm dark:border-gray-500 dark:border-opacity-30 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-opacity-50 dark:hover:text-white;
   }
 
   .button-primary-y {
-    @apply flex items-center justify-center flex-none px-2 py-2 space-x-2 font-semibold leading-none text-gray-700 bg-white border border-gray-400 rounded-md shadow-sm cursor-pointer dark:text-gray-300 hover:text-gray-1000 dark:bg-gray-900 border-opacity-30 dark:border-opacity-30 dark:border-gray-500 dark:hover:text-white hover:border-opacity-50 dark:hover:border-opacity-50 hover:shadow-sm;
+    @apply flex flex-none cursor-pointer items-center justify-center space-x-2 rounded-md border border-gray-400 border-opacity-30 bg-white px-2 py-2 font-semibold leading-none text-gray-700 shadow-sm hover:border-opacity-50 hover:text-gray-1000 hover:shadow-sm dark:border-gray-500 dark:border-opacity-30 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-opacity-50 dark:hover:text-white;
   }
 
   .filter-none {
